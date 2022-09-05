@@ -72,6 +72,6 @@ to_email "`awk '{print $9}' $logfile | sort | uniq -c | sort -rn`"
 
 # отправляем письмо
 
-cat $email | mutt -s "test_subj" $email_address
+cat $email | mutt -s "webserver stat" $email_address
 
 
